@@ -85,3 +85,22 @@ function searchMeal() {
           recipe.style.display = "block";
         });
 
+              })
+      .catch(() => {
+        // Display error message if fetch fails or meal not found
+        result.innerHTML = `<h3>Invalid Input</h3>`;
+      });
+  }
+}
+
+// Listen for "Enter" key press in the input field
+document.querySelector("input").addEventListener("keyup", (e) => {
+  if (e.key == "Enter") {
+    searchMeal(); // Trigger search when Enter is pressed
+  }
+});
+
+// Add click event to the search button
+searchBtn.addEventListener("click", searchMeal);
+
+
