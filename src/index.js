@@ -60,3 +60,28 @@ function searchMeal() {
           </div>
           <button id="show-recipe">View Recipe</button>
         `;
+                // Select dynamic elements for recipe show/hide and ingredients
+        let hideRecipe = document.querySelector("#hide-recipe");
+        let showRecipe = document.querySelector("#show-recipe");
+        let recipe = document.querySelector(".recipe");
+        let ingredientContent = document.querySelector(".ingredient-content");
+
+        // Create a list of ingredients and append to the page
+        let parent = document.createElement("ul");
+        ingredients.forEach((i) => {
+          let child = document.createElement("li");
+          child.innerText = i;
+          parent.appendChild(child);
+          ingredientContent.appendChild(parent);
+        });
+
+        // Hide recipe instructions when X is clicked
+        hideRecipe.addEventListener("click", () => {
+          recipe.style.display = "none";
+        });
+
+        // Show recipe instructions when button is clicked
+        showRecipe.addEventListener("click", () => {
+          recipe.style.display = "block";
+        });
+
