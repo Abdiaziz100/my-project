@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docu ment</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Flavor Diary</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>  <h1 id="heading">"THE FLAVOR DIARY"</h1>
-    <br>
-    <div class="first">
-        <div class="search-container">
-            <input type="text" id="user-input" placeholder="Enter Your Dish name here....">
-            <button id="search-btn">Search</button>
-        </div>
-        <div id="result"></div>
+<body>
+
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="recipe.html">Recipes</a>
     </div>
-   
-    <script src="src/index.js"></script>
+  </nav>
+
+  <header class="hero-section">
+    <h1>Welcome to <span class="highlight">The Flavor Diary</span></h1>
+    <p>Explore thousands of delicious meals from around the world.</p>
+    <a href="recipe.html" class="btn">Search Recipes</a>
+  </header>
+
+  <section class="about">
+    <h2>What We Offer</h2>
+    <p>Search meals, view ingredients, and read cooking instructions in one place. Simple and delicious!</p>
+    <img src="https://www.themealdb.com/images/category/beef.png" alt="sample meal" class="sample-img" />
+  </section>
+
+  <footer>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 The Flavor Diary. All rights reserved.</p>
+  </footer>
+ <script src="./src/index.js"></script>
 </body>
 </html>

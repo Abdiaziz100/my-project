@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Search | The Flavor Diary</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="recipe-page">
+
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="recipe.html" class="active">Recipes</a>
+    </div>
+  </nav>
+
+  <h1 id="heading">Find Your Favorite Recipe</h1>
+
+  <div class="search-container first">
+    <input type="text" id="user-input" placeholder="Search for a meal..." />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="./src/index.js" defer></script>
+</body>
+</html>
